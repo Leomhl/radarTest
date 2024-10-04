@@ -1,0 +1,7 @@
+{
+  "name": "radarTest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
