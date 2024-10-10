@@ -57,6 +57,8 @@ export class HomePage {
   }
 
   start(): void {
+    this.currentInterval = this.intervalInput;
+
     /**
      *  The following approach isn't respecting our time intervals and frequency update
      */
@@ -75,8 +77,7 @@ export class HomePage {
       //     beacons: false
       //   });
       // }, this.currentInterval*1000);
-
-      this.currentInterval = this.intervalInput;
+      
       // const logText = `Radar.trackVerified() -> ${this.currentInterval} sec`;
       const logText = `Radar.startTrackingVerified() -> ${this.currentInterval} sec`;
       this.locationUpdates.unshift(logText);
